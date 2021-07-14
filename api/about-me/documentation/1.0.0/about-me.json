@@ -636,6 +636,9 @@
               }
             }
           },
+          "footerText": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -688,6 +691,9 @@
                 },
                 "socialLinks": {
                   "type": "component"
+                },
+                "footerText": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -900,6 +906,9 @@
                 }
               }
             }
+          },
+          "footerText": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

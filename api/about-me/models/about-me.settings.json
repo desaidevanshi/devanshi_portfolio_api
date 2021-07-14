@@ -138,6 +138,14 @@
         }
       },
       "component": "contact.social-media"
+    },
+    "footerText": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
     }
   }
 }
