@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "portfolio_sections",
+  "collectionName": "contact_details",
   "info": {
-    "name": "PortfolioSection",
+    "name": "ContactDetails",
     "description": ""
   },
   "options": {
@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "header": {
+    "contectHeader": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -24,11 +24,31 @@
           "localized": true
         }
       },
-      "component": "common.header",
-      "required": true
+      "component": "contect-header.contect-header"
     },
-    "projects": {
-      "collection": "projects"
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "mail": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "message": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     },
     "buttonText": {
       "pluginOptions": {

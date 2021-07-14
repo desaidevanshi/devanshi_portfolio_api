@@ -530,8 +530,7 @@
       "Contact-form": {
         "required": [
           "id",
-          "name",
-          "phoneNumber"
+          "name"
         ],
         "properties": {
           "id": {
@@ -540,10 +539,10 @@
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
+          "message": {
+            "type": "string"
           },
-          "details": {
+          "mail": {
             "type": "string"
           },
           "published_at": {
@@ -554,17 +553,16 @@
       },
       "NewContact-form": {
         "required": [
-          "name",
-          "phoneNumber"
+          "name"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "phoneNumber": {
-            "type": "integer"
+          "message": {
+            "type": "string"
           },
-          "details": {
+          "mail": {
             "type": "string"
           },
           "published_at": {

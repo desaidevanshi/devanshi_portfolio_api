@@ -321,7 +321,6 @@
           "biography",
           "portfolioImage",
           "downloadCVText",
-          "resume",
           "firstName",
           "lastName",
           "role",
@@ -398,95 +397,6 @@
               },
               "updated_by": {
                 "type": "string"
-              }
-            }
-          },
-          "socialLinks": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id",
-                "name",
-                "url"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "icon": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
               }
             }
           },
@@ -637,103 +547,6 @@
             "type": "boolean",
             "default": true
           },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "biography",
-                "portfolioImage",
-                "downloadCVText",
-                "resume",
-                "firstName",
-                "lastName",
-                "role",
-                "isAvailable"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "biography": {
-                  "type": "string"
-                },
-                "portfolioImage": {
-                  "type": "string"
-                },
-                "socialLinks": {
-                  "type": "component"
-                },
-                "downloadCVText": {
-                  "type": "string"
-                },
-                "resume": {
-                  "type": "string"
-                },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "contact": {
-                  "type": "component"
-                },
-                "address": {
-                  "type": "component"
-                },
-                "birthDate": {
-                  "type": "string"
-                },
-                "isAvailable": {
-                  "type": "boolean"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewAbout-me": {
-        "required": [
-          "biography",
-          "downloadCVText",
-          "firstName",
-          "lastName",
-          "role",
-          "isAvailable"
-        ],
-        "properties": {
-          "biography": {
-            "type": "string"
-          },
           "socialLinks": {
             "type": "array",
             "items": {
@@ -823,6 +636,102 @@
               }
             }
           },
+          "localizations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "biography",
+                "portfolioImage",
+                "downloadCVText",
+                "firstName",
+                "lastName",
+                "role",
+                "isAvailable"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "biography": {
+                  "type": "string"
+                },
+                "portfolioImage": {
+                  "type": "string"
+                },
+                "downloadCVText": {
+                  "type": "string"
+                },
+                "resume": {
+                  "type": "string"
+                },
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "contact": {
+                  "type": "component"
+                },
+                "address": {
+                  "type": "component"
+                },
+                "birthDate": {
+                  "type": "string"
+                },
+                "isAvailable": {
+                  "type": "boolean"
+                },
+                "socialLinks": {
+                  "type": "component"
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "locale": {
+            "type": "string"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewAbout-me": {
+        "required": [
+          "biography",
+          "downloadCVText",
+          "firstName",
+          "lastName",
+          "role",
+          "isAvailable"
+        ],
+        "properties": {
+          "biography": {
+            "type": "string"
+          },
           "downloadCVText": {
             "type": "string",
             "default": "Download CV"
@@ -902,6 +811,95 @@
           "isAvailable": {
             "type": "boolean",
             "default": true
+          },
+          "socialLinks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "name",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "icon": {
+                  "required": [
+                    "id",
+                    "name",
+                    "hash",
+                    "mime",
+                    "size",
+                    "url",
+                    "provider"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "alternativeText": {
+                      "type": "string"
+                    },
+                    "caption": {
+                      "type": "string"
+                    },
+                    "width": {
+                      "type": "integer"
+                    },
+                    "height": {
+                      "type": "integer"
+                    },
+                    "formats": {
+                      "type": "object"
+                    },
+                    "hash": {
+                      "type": "string"
+                    },
+                    "ext": {
+                      "type": "string"
+                    },
+                    "mime": {
+                      "type": "string"
+                    },
+                    "size": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string"
+                    },
+                    "previewUrl": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "provider_metadata": {
+                      "type": "object"
+                    },
+                    "related": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
           },
           "localizations": {
             "type": "array",

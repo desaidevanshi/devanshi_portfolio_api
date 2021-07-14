@@ -39,17 +39,6 @@
         }
       }
     },
-    "socialLinks": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "contact.social-media",
-      "required": false
-    },
     "downloadCVText": {
       "pluginOptions": {
         "i18n": {
@@ -67,7 +56,7 @@
         "files"
       ],
       "plugin": "upload",
-      "required": true,
+      "required": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -139,6 +128,16 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "contact.social-media"
     }
   }
 }

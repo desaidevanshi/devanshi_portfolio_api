@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/banner-section": {
+    "/contact-details": {
       "get": {
         "deprecated": false,
-        "description": "Find all the banner-section's records",
+        "description": "Find all the contact-details's records",
         "responses": {
           "200": {
-            "description": "Retrieve banner-section document(s)",
+            "description": "Retrieve contact-details document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Banner-section"
+          "Contact-details"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single banner-section record",
+        "description": "Update a single contact-details record",
         "responses": {
           "200": {
-            "description": "Retrieve banner-section document(s)",
+            "description": "Retrieve contact-details document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Banner-section"
+          "Contact-details"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewBanner-section"
+                "$ref": "#/components/schemas/NewContact-details"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single banner-section record",
+        "description": "Delete a single contact-details record",
         "responses": {
           "200": {
-            "description": "deletes a single banner-section based on the ID supplied",
+            "description": "deletes a single contact-details based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Banner-section"
+          "Contact-details"
         ],
         "parameters": []
       }
@@ -315,7 +315,7 @@
   },
   "components": {
     "schemas": {
-      "Banner-section": {
+      "Contact-details": {
         "required": [
           "id"
         ],
@@ -323,101 +323,34 @@
           "id": {
             "type": "string"
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "backgroundImage": {
+          "contectHeader": {
+            "type": "object",
             "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
+              "title": {
                 "type": "string"
               },
               "caption": {
                 "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
-          "bannerCaption": {
+          "name": {
             "type": "string"
           },
-          "Skills": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "bannerSkills": {
-                  "type": "string"
-                }
-              }
-            }
+          "mail": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "buttonText": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -429,23 +362,20 @@
                 "id": {
                   "type": "string"
                 },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "backgroundImage": {
-                  "type": "string"
-                },
-                "bannerCaption": {
-                  "type": "string"
-                },
-                "Skills": {
+                "contectHeader": {
                   "type": "component"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "mail": {
+                  "type": "string"
+                },
+                "message": {
+                  "type": "string"
+                },
+                "buttonText": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -477,36 +407,36 @@
           }
         }
       },
-      "NewBanner-section": {
+      "NewContact-details": {
         "properties": {
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "bannerCaption": {
-            "type": "string"
-          },
-          "Skills": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "bannerSkills": {
-                  "type": "string"
-                }
+          "contectHeader": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
               }
             }
+          },
+          "name": {
+            "type": "string"
+          },
+          "mail": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "buttonText": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_banner_skills_skills",
+  "info": {
+    "name": "Skills",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bannerSkills": {
+      "type": "string"
+    }
+  }
+}

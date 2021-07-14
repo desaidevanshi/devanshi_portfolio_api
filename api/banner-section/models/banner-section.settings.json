@@ -53,6 +53,24 @@
           "localized": false
         }
       }
+    },
+    "bannerCaption": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Skills": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "banner-skills.skills"
     }
   }
 }

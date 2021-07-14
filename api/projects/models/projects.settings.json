@@ -108,6 +108,16 @@
           "localized": false
         }
       }
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "contact.social-media"
     }
   }
 }

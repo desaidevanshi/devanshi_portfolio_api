@@ -386,6 +386,9 @@
                 "displayImage": {
                   "type": "string"
                 },
+                "socialLinks": {
+                  "type": "component"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -407,6 +410,9 @@
               }
             }
           },
+          "buttonText": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -426,6 +432,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "buttonText": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -486,6 +495,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "buttonText": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contect_header_contect_headers",
+  "info": {
+    "name": "contectHeader",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    }
+  }
+}
