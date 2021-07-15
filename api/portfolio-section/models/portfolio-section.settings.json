@@ -37,6 +37,9 @@
         }
       },
       "type": "string"
+    },
+    "project_categories": {
+      "collection": "project-categories"
     }
   }
 }

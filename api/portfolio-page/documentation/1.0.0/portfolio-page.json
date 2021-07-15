@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/portfolio-section": {
+    "/portfolio-page": {
       "get": {
         "deprecated": false,
-        "description": "Find all the portfolio-section's records",
+        "description": "Find all the portfolio-page's records",
         "responses": {
           "200": {
-            "description": "Retrieve portfolio-section document(s)",
+            "description": "Retrieve portfolio-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolio-section"
+          "Portfolio-page"
         ],
         "parameters": [
           {
@@ -195,10 +195,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single portfolio-section record",
+        "description": "Update a single portfolio-page record",
         "responses": {
           "200": {
-            "description": "Retrieve portfolio-section document(s)",
+            "description": "Retrieve portfolio-page document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolio-section"
+          "Portfolio-page"
         ],
         "requestBody": {
           "description": "",
@@ -252,7 +252,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPortfolio-section"
+                "$ref": "#/components/schemas/NewPortfolio-page"
               }
             }
           }
@@ -261,10 +261,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single portfolio-section record",
+        "description": "Delete a single portfolio-page record",
         "responses": {
           "200": {
-            "description": "deletes a single portfolio-section based on the ID supplied",
+            "description": "deletes a single portfolio-page based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -307,7 +307,7 @@
         },
         "summary": "",
         "tags": [
-          "Portfolio-section"
+          "Portfolio-page"
         ],
         "parameters": []
       }
@@ -315,10 +315,9 @@
   },
   "components": {
     "schemas": {
-      "Portfolio-section": {
+      "Portfolio-page": {
         "required": [
-          "id",
-          "header"
+          "id"
         ],
         "properties": {
           "id": {
@@ -327,9 +326,7 @@
           "header": {
             "type": "object",
             "required": [
-              "id",
-              "title",
-              "caption"
+              "id"
             ],
             "properties": {
               "id": {
@@ -338,8 +335,33 @@
               "title": {
                 "type": "string"
               },
-              "caption": {
+              "goBack": {
                 "type": "string"
+              }
+            }
+          },
+          "project_categories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -410,104 +432,18 @@
               }
             }
           },
-          "buttonText": {
-            "type": "string"
-          },
-          "project_categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "header"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "header": {
-                  "type": "component"
-                },
-                "projects": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "buttonText": {
-                  "type": "string"
-                },
-                "project_categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
-            "type": "string"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewPortfolio-section": {
-        "required": [
-          "header"
-        ],
+      "NewPortfolio-page": {
         "properties": {
           "header": {
             "type": "object",
             "required": [
-              "id",
-              "title",
-              "caption"
+              "id"
             ],
             "properties": {
               "id": {
@@ -516,19 +452,10 @@
               "title": {
                 "type": "string"
               },
-              "caption": {
+              "goBack": {
                 "type": "string"
               }
             }
-          },
-          "projects": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "buttonText": {
-            "type": "string"
           },
           "project_categories": {
             "type": "array",
@@ -536,14 +463,11 @@
               "type": "string"
             }
           },
-          "localizations": {
+          "projects": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "locale": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

@@ -25,6 +25,9 @@
     },
     "skills": {
       "collection": "skills"
+    },
+    "button": {
+      "type": "string"
     }
   }
 }
