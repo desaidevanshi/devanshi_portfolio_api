@@ -16,22 +16,6 @@
     }
   },
   "attributes": {
-    "firstName": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
-    "lastName": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "string"
-    },
     "description": {
       "pluginOptions": {
         "i18n": {

@@ -323,12 +323,6 @@
           "id": {
             "type": "string"
           },
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },
@@ -429,12 +423,6 @@
                 "id": {
                   "type": "string"
                 },
-                "firstName": {
-                  "type": "string"
-                },
-                "lastName": {
-                  "type": "string"
-                },
                 "description": {
                   "type": "string"
                 },
@@ -479,12 +467,6 @@
       },
       "NewBanner-section": {
         "properties": {
-          "firstName": {
-            "type": "string"
-          },
-          "lastName": {
-            "type": "string"
-          },
           "description": {
             "type": "string"
           },

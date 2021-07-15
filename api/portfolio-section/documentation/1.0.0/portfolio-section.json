@@ -348,9 +348,7 @@
             "items": {
               "required": [
                 "id",
-                "title",
-                "description",
-                "role"
+                "title"
               ],
               "properties": {
                 "id": {
@@ -359,29 +357,20 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "order": {
-                  "type": "integer"
-                },
                 "displayImage": {
                   "type": "string"
                 },
                 "socialLinks": {
                   "type": "component"
+                },
+                "projectCategory": {
+                  "type": "component"
+                },
+                "role": {
+                  "type": "component"
+                },
+                "technologiesH": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -407,31 +396,6 @@
           "buttonText": {
             "type": "string"
           },
-          "project_categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -454,12 +418,6 @@
                 },
                 "buttonText": {
                   "type": "string"
-                },
-                "project_categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "localizations": {
                   "type": "array",
@@ -523,12 +481,6 @@
           },
           "buttonText": {
             "type": "string"
-          },
-          "project_categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "localizations": {
             "type": "array",

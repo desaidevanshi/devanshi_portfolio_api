@@ -517,9 +517,7 @@
       "Projects": {
         "required": [
           "id",
-          "title",
-          "description",
-          "role"
+          "title"
         ],
         "properties": {
           "id": {
@@ -527,88 +525,6 @@
           },
           "title": {
             "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "media": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "order": {
-            "type": "integer"
           },
           "displayImage": {
             "required": [
@@ -766,14 +682,53 @@
               }
             }
           },
+          "projectCategory": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "role": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "technologiesH": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "title",
-                "description",
-                "role"
+                "title"
               ],
               "properties": {
                 "id": {
@@ -782,29 +737,20 @@
                 "title": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "media": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "order": {
-                  "type": "integer"
-                },
                 "displayImage": {
                   "type": "string"
                 },
                 "socialLinks": {
                   "type": "component"
+                },
+                "projectCategory": {
+                  "type": "component"
+                },
+                "role": {
+                  "type": "component"
+                },
+                "technologiesH": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -838,25 +784,11 @@
       },
       "NewProjects": {
         "required": [
-          "title",
-          "description",
-          "role"
+          "title"
         ],
         "properties": {
           "title": {
             "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "order": {
-            "type": "integer"
           },
           "socialLinks": {
             "type": "array",
@@ -946,6 +878,47 @@
                 }
               }
             }
+          },
+          "projectCategory": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "role": {
+            "type": "object",
+            "required": [
+              "id",
+              "title",
+              "caption"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              }
+            }
+          },
+          "technologiesH": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

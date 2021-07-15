@@ -323,10 +323,24 @@
           "id": {
             "type": "string"
           },
-          "contectHeader": {
+          "name": {
+            "type": "string"
+          },
+          "mail": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "buttonText": {
+            "type": "string"
+          },
+          "header": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "caption"
             ],
             "properties": {
               "id": {
@@ -340,18 +354,6 @@
               }
             }
           },
-          "name": {
-            "type": "string"
-          },
-          "mail": {
-            "type": "string"
-          },
-          "message": {
-            "type": "string"
-          },
-          "buttonText": {
-            "type": "string"
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -361,9 +363,6 @@
               "properties": {
                 "id": {
                   "type": "string"
-                },
-                "contectHeader": {
-                  "type": "component"
                 },
                 "name": {
                   "type": "string"
@@ -376,6 +375,9 @@
                 },
                 "buttonText": {
                   "type": "string"
+                },
+                "header": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -409,10 +411,24 @@
       },
       "NewContact-details": {
         "properties": {
-          "contectHeader": {
+          "name": {
+            "type": "string"
+          },
+          "mail": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "buttonText": {
+            "type": "string"
+          },
+          "header": {
             "type": "object",
             "required": [
-              "id"
+              "id",
+              "title",
+              "caption"
             ],
             "properties": {
               "id": {
@@ -425,18 +441,6 @@
                 "type": "string"
               }
             }
-          },
-          "name": {
-            "type": "string"
-          },
-          "mail": {
-            "type": "string"
-          },
-          "message": {
-            "type": "string"
-          },
-          "buttonText": {
-            "type": "string"
           },
           "localizations": {
             "type": "array",
