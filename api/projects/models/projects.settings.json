@@ -43,26 +43,6 @@
       "type": "string",
       "required": true
     },
-    "category": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.details"
-    },
-    "technologyUsed": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "common.details"
-    },
     "link": {
       "pluginOptions": {
         "i18n": {

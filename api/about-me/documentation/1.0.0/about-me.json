@@ -480,69 +480,6 @@
           "role": {
             "type": "string"
           },
-          "contact": {
-            "type": "object",
-            "required": [
-              "id",
-              "mobileNumber",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "mobileNumber": {
-                "type": "integer"
-              },
-              "email": {
-                "type": "string"
-              }
-            }
-          },
-          "address": {
-            "type": "object",
-            "required": [
-              "id",
-              "addressLine1",
-              "city",
-              "state",
-              "country",
-              "postalCode"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "addressLine1": {
-                "type": "string"
-              },
-              "addressLine2": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "state": {
-                "type": "string"
-              },
-              "country": {
-                "type": "string"
-              },
-              "postalCode": {
-                "type": "string"
-              },
-              "latitude": {
-                "type": "number"
-              },
-              "longitude": {
-                "type": "number"
-              }
-            }
-          },
-          "birthDate": {
-            "type": "string",
-            "format": "date"
-          },
           "isAvailable": {
             "type": "boolean",
             "default": true
@@ -677,15 +614,6 @@
                 "role": {
                   "type": "string"
                 },
-                "contact": {
-                  "type": "component"
-                },
-                "address": {
-                  "type": "component"
-                },
-                "birthDate": {
-                  "type": "string"
-                },
                 "isAvailable": {
                   "type": "boolean"
                 },
@@ -750,69 +678,6 @@
           },
           "role": {
             "type": "string"
-          },
-          "contact": {
-            "type": "object",
-            "required": [
-              "id",
-              "mobileNumber",
-              "email"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "mobileNumber": {
-                "type": "integer"
-              },
-              "email": {
-                "type": "string"
-              }
-            }
-          },
-          "address": {
-            "type": "object",
-            "required": [
-              "id",
-              "addressLine1",
-              "city",
-              "state",
-              "country",
-              "postalCode"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "addressLine1": {
-                "type": "string"
-              },
-              "addressLine2": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "state": {
-                "type": "string"
-              },
-              "country": {
-                "type": "string"
-              },
-              "postalCode": {
-                "type": "string"
-              },
-              "latitude": {
-                "type": "number"
-              },
-              "longitude": {
-                "type": "number"
-              }
-            }
-          },
-          "birthDate": {
-            "type": "string",
-            "format": "date"
           },
           "isAvailable": {
             "type": "boolean",

@@ -90,35 +90,6 @@
       "type": "string",
       "required": true
     },
-    "contact": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "component": "contact.contact-details"
-    },
-    "address": {
-      "type": "component",
-      "repeatable": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "contact.address"
-    },
-    "birthDate": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "date",
-      "required": false
-    },
     "isAvailable": {
       "pluginOptions": {
         "i18n": {

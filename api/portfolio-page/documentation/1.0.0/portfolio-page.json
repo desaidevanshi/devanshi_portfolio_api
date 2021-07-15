@@ -387,12 +387,6 @@
                 "role": {
                   "type": "string"
                 },
-                "category": {
-                  "type": "component"
-                },
-                "technologyUsed": {
-                  "type": "component"
-                },
                 "link": {
                   "type": "string"
                 },
