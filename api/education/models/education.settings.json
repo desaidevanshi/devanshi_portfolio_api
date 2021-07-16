@@ -24,24 +24,6 @@
         }
       }
     },
-    "startDate": {
-      "type": "date",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "endDate": {
-      "type": "date",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "degree": {
       "pluginOptions": {
         "i18n": {
@@ -68,6 +50,22 @@
       "type": "integer",
       "min": 1,
       "max": 100
+    },
+    "startD": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "biginteger"
+    },
+    "endD": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "biginteger"
     }
   }
 }

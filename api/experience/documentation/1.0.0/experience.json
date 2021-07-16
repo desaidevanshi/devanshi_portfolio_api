@@ -533,14 +533,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -550,6 +542,12 @@
           },
           "companyLink": {
             "type": "string"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
           },
           "localizations": {
             "type": "array",
@@ -572,12 +570,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -587,6 +579,12 @@
                 },
                 "companyLink": {
                   "type": "string"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
+                  "type": "integer"
                 },
                 "localizations": {
                   "type": "array",
@@ -633,14 +631,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -650,6 +640,12 @@
           },
           "companyLink": {
             "type": "string"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
           },
           "localizations": {
             "type": "array",

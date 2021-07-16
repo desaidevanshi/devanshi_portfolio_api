@@ -328,17 +328,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -368,9 +367,6 @@
                 },
                 "role": {
                   "type": "component"
-                },
-                "technologiesH": {
-                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -458,17 +454,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }

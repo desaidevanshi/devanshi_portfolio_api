@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/15/2021 5:55:15 PM"
+    "x-generation-date": "07/16/2021 5:31:37 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7415,17 +7415,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -7503,17 +7502,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -7601,17 +7599,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -7621,8 +7618,6 @@
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -7632,12 +7627,6 @@
                 "institute": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "degree": {
                   "type": "string"
                 },
@@ -7645,6 +7634,12 @@
                   "type": "string"
                 },
                 "percentage": {
+                  "type": "integer"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
                   "type": "integer"
                 },
                 "localizations": {
@@ -7689,12 +7684,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -7704,6 +7693,12 @@
                 },
                 "companyLink": {
                   "type": "string"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
+                  "type": "integer"
                 },
                 "localizations": {
                   "type": "array",
@@ -7780,17 +7775,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -7831,8 +7825,6 @@
       "Education": {
         "required": [
           "id",
-          "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
@@ -7841,14 +7833,6 @@
           },
           "institute": {
             "type": "string"
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
           },
           "degree": {
             "type": "string"
@@ -7859,13 +7843,17 @@
           "percentage": {
             "type": "integer"
           },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -7875,12 +7863,6 @@
                 "institute": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "degree": {
                   "type": "string"
                 },
@@ -7888,6 +7870,12 @@
                   "type": "string"
                 },
                 "percentage": {
+                  "type": "integer"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
                   "type": "integer"
                 },
                 "localizations": {
@@ -7922,21 +7910,11 @@
       },
       "NewEducation": {
         "required": [
-          "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
           "institute": {
             "type": "string"
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
           },
           "degree": {
             "type": "string"
@@ -7945,6 +7923,12 @@
             "type": "string"
           },
           "percentage": {
+            "type": "integer"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
             "type": "integer"
           },
           "localizations": {
@@ -7987,14 +7971,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -8004,6 +7980,12 @@
           },
           "companyLink": {
             "type": "string"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
           },
           "localizations": {
             "type": "array",
@@ -8026,12 +8008,6 @@
                 "description": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "jobType": {
                   "type": "string",
                   "enum": [
@@ -8041,6 +8017,12 @@
                 },
                 "companyLink": {
                   "type": "string"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
+                  "type": "integer"
                 },
                 "localizations": {
                   "type": "array",
@@ -8087,14 +8069,6 @@
           "description": {
             "type": "string"
           },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
-          },
           "jobType": {
             "type": "string",
             "enum": [
@@ -8104,6 +8078,12 @@
           },
           "companyLink": {
             "type": "string"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
           },
           "localizations": {
             "type": "array",
@@ -8139,17 +8119,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -8179,9 +8158,6 @@
                 },
                 "role": {
                   "type": "component"
-                },
-                "technologiesH": {
-                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -8269,17 +8245,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -8486,17 +8461,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -8505,23 +8479,19 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
-          },
-          "technologiesH": {
-            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8548,9 +8518,6 @@
                 },
                 "role": {
                   "type": "component"
-                },
-                "technologiesH": {
-                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -8683,17 +8650,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -8702,23 +8668,19 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
-          },
-          "technologiesH": {
-            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8753,17 +8715,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -8910,17 +8871,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }

@@ -339,17 +339,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }
@@ -427,17 +426,16 @@
             "type": "object",
             "required": [
               "id",
-              "title",
               "caption"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "title": {
+              "caption": {
                 "type": "string"
               },
-              "caption": {
+              "title": {
                 "type": "string"
               }
             }

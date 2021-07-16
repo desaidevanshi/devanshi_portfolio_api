@@ -42,22 +42,6 @@
         }
       }
     },
-    "startDate": {
-      "type": "date",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "endDate": {
-      "type": "date",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "jobType": {
       "type": "enumeration",
       "enum": [
@@ -78,6 +62,22 @@
         }
       },
       "type": "string"
+    },
+    "startD": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "biginteger"
+    },
+    "endD": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "biginteger"
     }
   }
 }

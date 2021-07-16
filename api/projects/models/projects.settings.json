@@ -68,14 +68,6 @@
         }
       },
       "component": "common.header"
-    },
-    "technologiesH": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
     }
   }
 }

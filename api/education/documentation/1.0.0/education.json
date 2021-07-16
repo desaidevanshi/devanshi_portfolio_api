@@ -517,8 +517,6 @@
       "Education": {
         "required": [
           "id",
-          "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
@@ -527,14 +525,6 @@
           },
           "institute": {
             "type": "string"
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
           },
           "degree": {
             "type": "string"
@@ -545,13 +535,17 @@
           "percentage": {
             "type": "integer"
           },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
+            "type": "integer"
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
                 "id",
-                "startDate",
-                "endDate",
                 "degree"
               ],
               "properties": {
@@ -561,12 +555,6 @@
                 "institute": {
                   "type": "string"
                 },
-                "startDate": {
-                  "type": "string"
-                },
-                "endDate": {
-                  "type": "string"
-                },
                 "degree": {
                   "type": "string"
                 },
@@ -574,6 +562,12 @@
                   "type": "string"
                 },
                 "percentage": {
+                  "type": "integer"
+                },
+                "startD": {
+                  "type": "integer"
+                },
+                "endD": {
                   "type": "integer"
                 },
                 "localizations": {
@@ -608,21 +602,11 @@
       },
       "NewEducation": {
         "required": [
-          "startDate",
-          "endDate",
           "degree"
         ],
         "properties": {
           "institute": {
             "type": "string"
-          },
-          "startDate": {
-            "type": "string",
-            "format": "date"
-          },
-          "endDate": {
-            "type": "string",
-            "format": "date"
           },
           "degree": {
             "type": "string"
@@ -631,6 +615,12 @@
             "type": "string"
           },
           "percentage": {
+            "type": "integer"
+          },
+          "startD": {
+            "type": "integer"
+          },
+          "endD": {
             "type": "integer"
           },
           "localizations": {
