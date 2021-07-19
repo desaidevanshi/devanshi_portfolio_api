@@ -2,6 +2,8 @@
 # OS X
 ############################
 
+git push heroku HEAD:main
+
 .DS_Store
 .AppleDouble
 .LSOverride
