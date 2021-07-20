@@ -422,11 +422,11 @@
                 "companyLink": {
                   "type": "string"
                 },
-                "startD": {
-                  "type": "integer"
+                "startDt": {
+                  "type": "string"
                 },
-                "endD": {
-                  "type": "integer"
+                "endDt": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",

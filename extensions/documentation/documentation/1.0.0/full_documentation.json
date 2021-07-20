@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/16/2021 5:31:37 PM"
+    "x-generation-date": "07/20/2021 4:18:48 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7694,11 +7694,11 @@
                 "companyLink": {
                   "type": "string"
                 },
-                "startD": {
-                  "type": "integer"
+                "startDt": {
+                  "type": "string"
                 },
-                "endD": {
-                  "type": "integer"
+                "endDt": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -7981,11 +7981,11 @@
           "companyLink": {
             "type": "string"
           },
-          "startD": {
-            "type": "integer"
+          "startDt": {
+            "type": "string"
           },
-          "endD": {
-            "type": "integer"
+          "endDt": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",
@@ -8018,11 +8018,11 @@
                 "companyLink": {
                   "type": "string"
                 },
-                "startD": {
-                  "type": "integer"
+                "startDt": {
+                  "type": "string"
                 },
-                "endD": {
-                  "type": "integer"
+                "endDt": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -8079,11 +8079,11 @@
           "companyLink": {
             "type": "string"
           },
-          "startD": {
-            "type": "integer"
+          "startDt": {
+            "type": "string"
           },
-          "endD": {
-            "type": "integer"
+          "endDt": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

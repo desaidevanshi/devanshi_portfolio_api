@@ -63,21 +63,21 @@
       },
       "type": "string"
     },
-    "startD": {
+    "startDt": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "biginteger"
+      "type": "string"
     },
-    "endD": {
+    "endDt": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "biginteger"
+      "type": "string"
     }
   }
 }
