@@ -368,6 +368,12 @@
                 "role": {
                   "type": "component"
                 },
+                "slider": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
